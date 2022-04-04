@@ -30,3 +30,4 @@ and import sql file in folder database
 # Open http://127.0.0.1:8000
 # pos_app_laravel
 # post_laravel
+# post_laravel
