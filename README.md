@@ -1,5 +1,5 @@
 <p>
-    git clone https://github.com/adhin2406/pos_app_laravel.git
+    git clone https://github.com/adhin2406/post_laravel.git
 </p>
 
 <p>
