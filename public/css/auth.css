@@ -1,0 +1,90 @@
+/* -----------------
+        font    
+    ----------------------*/
+@font-face {
+	font-family: "Regular";
+	src: url("../../font/Nunito/Nunito-Black.ttf"), url("../../font/Nunito/Nunito-BlackItalic.ttf"), url("../../font/Nunito/Nunito-Italic.ttf"),
+		url("../../font/Nunito/Nunito-Regular.ttf");
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "terang";
+	src: url("../../font/Nunito/Nunito-ExtraLight.ttf"), url("../../font/Nunito/Nunito-ExtraLightItalic.ttf"),
+		url("../../font/Nunito/Nunito-Light.ttf"), url("../../font/Nunito/Nunito-LightItalic.ttf");
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Bold";
+	src: url("../../font/Nunito/Nunito-Bold.ttf"), url("../../font/Nunito/Nunito-BoldItalic.ttf"), url("../../font/Nunito/Nunito-ExtraBold.ttf"),
+		url("../../font/Nunito/Nunito-ExtraBoldItalic.ttf"), url("../../font/Nunito/Nunito-SemiBold.ttf"),
+		url("../../font/Nunito/Nunito-SemiBoldItalic.ttf");
+	font-weight: bold;
+	font-style: normal;
+}
+
+.body {
+	overflow-x: hidden !important;
+}
+
+.mobile img {
+	max-width: 100%;
+}
+
+.mobile .formlogin {
+	position: relative;
+	z-index: 1;
+	margin-top: -20%;
+	background-color: white !important;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+}
+
+.mobile .judul {
+	padding-left: 3%;
+	padding-top: 10%;
+}
+
+.mobile .judul h3 {
+	font-family: Poppins, sans-serif;
+	font-size: 25px;
+}
+
+.pc .judul h3 {
+	font-family: Poppins, sans-serif;
+}
+
+.pc .judul p {
+	font-family: Poppins, sans-serif;
+	font-size: 15px;
+	margin-bottom: 5%;
+}
+
+.mobile .judul p {
+	font-family: Poppins, sans-serif;
+	font-size: 22px;
+	margin-bottom: 10%;
+}
+
+.mobile form label,
+.mobile button {
+	font-family: "Bold";
+	font-size: 20px;
+}
+
+.mobile .daftar,
+.mobile .daftar a {
+	text-align: center !important;
+	font-family: "Bold";
+	font-size: 20px;
+	margin-top: 15%;
+}
+
+.invalid-feedback {
+	font-family: "Bold";
+	font-size: 20px;
+	margin-bottom: 3%;
+}

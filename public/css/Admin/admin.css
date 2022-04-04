@@ -1,0 +1,499 @@
+@font-face {
+    font-family: Roboto-Regular;
+    src: url(../fonts/roboto/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Medium;
+    src: url(../fonts/roboto/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: Roboto-Bold;
+    src: url(../fonts/roboto/Roboto-Bold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    font-family: sans-serif;
+}
+
+a {
+    margin: 0;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+}
+
+a:focus {
+    outline: none !important;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+ul,
+li {
+    margin: 0;
+    list-style-type: none;
+}
+
+input {
+    display: block;
+    outline: none;
+    border: none !important;
+}
+
+textarea {
+    display: block;
+    outline: none;
+}
+
+textarea:focus,
+input:focus {
+    border-color: transparent !important;
+}
+
+button {
+    outline: none !important;
+    border: none;
+    background: 0 0;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+iframe {
+    border: none !important;
+}
+
+.js-pscroll {
+    position: relative;
+    overflow: hidden;
+}
+
+.table100 .ps__rail-x {
+    z-index: 1010;
+    height: 6px;
+    background-color: transparent;
+    opacity: 1 !important;
+    bottom: 10px;
+}
+
+.table100 .ps__rail-x::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #e6e6e6;
+    height: 100%;
+    width: calc(100% - 30px);
+    left: 15px;
+    top: 0;
+}
+
+.table100 .ps__rail-x .ps__thumb-x {
+    height: 100%;
+    bottom: 0;
+    background-color: transparent;
+    opacity: 1 !important;
+}
+
+.table100 .ps__rail-x .ps__thumb-x::before {
+    content: "";
+    display: block;
+    position: absolute;
+    background-color: #b3b3b3;
+    height: 100%;
+    width: calc(100% - 30px);
+    top: 0;
+    left: 15px;
+}
+
+.container-table100 {
+    max-width: 1366px;
+    margin: 0 auto;
+    min-height: 100vh;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 33px 100px;
+}
+
+.admin .wrap-table100 {
+    margin-top: -50% !important;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.05);
+    width: 116%;
+}
+
+.wrap-table100 {
+    width: 116%;
+    margin-top: -30% !important;
+}
+
+.table100 {
+    background-color: #fff;
+}
+
+table {
+    width: 100%;
+}
+
+th,
+td {
+    font-weight: unset;
+    padding-right: 10px;
+}
+
+.column1 {
+    width: 100%;
+    padding-left: 40px;
+}
+
+.column2 {
+    width: 225px;
+    padding-left: 55px;
+}
+
+.column3 {
+    width: 205px;
+}
+
+.column4 {
+    width: 195px;
+}
+
+.column5 {
+    width: 235px;
+}
+
+.column6 {
+    width: 170px;
+}
+
+.column7 {
+    width: 330px;
+}
+
+.column8 {
+    width: 305px;
+}
+
+.table100 th {
+    padding-top: 21px;
+    padding-bottom: 21px;
+}
+
+.table100 td {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+.table100 {
+    width: 100%;
+    position: relative;
+}
+
+.table100-firstcol {
+    background-color: #fff;
+    position: absolute;
+    z-index: 1000;
+    width: 310px;
+    top: 0;
+    left: 0;
+}
+
+.table100-firstcol table {
+    background-color: #fff;
+}
+
+.wrap-table100-nextcols {
+    width: 100%;
+    overflow: auto;
+    padding-left: 310px;
+    padding-bottom: 28px;
+}
+
+.table100-nextcols table {
+    table-layout: fixed;
+}
+
+.shadow-table100-firstcol {
+    box-shadow: 8px 0 10px 0 rgba(0, 0, 0, 0.05);
+    -moz-box-shadow: 8px 0 10px 0 rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: 8px 0 10px 0 rgba(0, 0, 0, 0.05);
+    -o-box-shadow: 8px 0 10px 0 rgba(0, 0, 0, 0.05);
+    -ms-box-shadow: 8px 0 10px 0 rgba(0, 0, 0, 0.05);
+}
+
+.table100-firstcol table {
+    background-color: transparent;
+}
+
+.table100.ver1 th {
+    font-family: Roboto-Bold;
+    font-size: 14px;
+    color: #333;
+    line-height: 1.4;
+    text-transform: uppercase;
+}
+
+.table100.ver1 td {
+    font-family: Roboto-Medium;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.table100.ver1 .table100-firstcol td {
+    color: #666;
+}
+
+.table100.ver1 .table100-nextcols td {
+    color: #999;
+}
+
+.table100.ver1 tr {
+    border-bottom: 1px solid #f2f2f2;
+}
+
+.setting {
+    margin-bottom: 5%;
+}
+
+.setting .navbar-brand img {
+    width: 20% !important;
+}
+
+.setting .nav-link {
+    font-family: "Bold";
+    font-size: 20px;
+}
+
+.fade .accordion {
+    margin: 40px 0;
+}
+
+.fade .accordion .item {
+    border: none;
+    margin-bottom: 50px;
+    background: none;
+}
+
+.fade .t-p {
+    font-family: "terang";
+    color: black;
+    padding: 40px 30px 0px 30px;
+}
+
+.fade .accordion .item .item-header h2 button.btn.btn-link {
+    background: #333435;
+    color: white;
+    border-radius: 0px;
+    font-family: "Poppins";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 2.5;
+    text-decoration: none;
+}
+
+.fade .accordion .item .item-header {
+    border-bottom: none;
+    background: transparent;
+    padding: 0px;
+    margin: 2px;
+}
+
+.fade .accordion .item .item-header h2 button {
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+.fade .accordion .item .item-header h2 svg {
+    float: right;
+    font-size: 30px;
+    color: #eca300;
+    background-color: black;
+    width: 60px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.fade button.btn.btn-link.collapsed svg {
+    transform: rotate(0deg);
+}
+
+.fade button.btn.btn-link svg {
+    transform: rotate(180deg);
+    transition: 0.5s;
+}
+
+.ui-w-80 {
+    width: 80px !important;
+    height: auto;
+}
+
+.btn-default {
+    border-color: rgba(24, 28, 33, 0.1);
+    background: rgba(0, 0, 0, 0);
+    color: #4e5155;
+}
+
+label.btn {
+    margin-bottom: 0;
+}
+
+.btn-outline-primary {
+    border-color: #26b4ff;
+    background: transparent;
+    color: #26b4ff;
+}
+
+.btn {
+    cursor: pointer;
+}
+
+.text-light {
+    color: #babbbc !important;
+}
+
+.btn-facebook {
+    border-color: rgba(0, 0, 0, 0);
+    background: #3b5998;
+    color: #fff;
+}
+
+.btn-instagram {
+    border-color: rgba(0, 0, 0, 0);
+    background: #000;
+    color: #fff;
+}
+
+.card {
+    background-clip: padding-box;
+    box-shadow: 0 1px 4px rgba(24, 28, 33, 0.012);
+}
+
+.row-bordered {
+    overflow: hidden;
+}
+
+.account-settings-fileinput {
+    position: absolute;
+    visibility: hidden;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+}
+
+.account-settings-links .list-group-item.active {
+    font-weight: bold !important;
+}
+
+html:not(.dark-style) .account-settings-links .list-group-item.active {
+    background: transparent !important;
+}
+
+.account-settings-multiselect~.select2-container {
+    width: 100% !important;
+}
+
+.light-style .account-settings-links .list-group-item {
+    padding: 0.85rem 1.5rem;
+    border-color: rgba(24, 28, 33, 0.03) !important;
+}
+
+.light-style .account-settings-links .list-group-item.active {
+    color: #4e5155 !important;
+}
+
+.material-style .account-settings-links .list-group-item {
+    padding: 0.85rem 1.5rem;
+    border-color: rgba(24, 28, 33, 0.03) !important;
+}
+
+.material-style .account-settings-links .list-group-item.active {
+    color: #4e5155 !important;
+}
+
+.dark-style .account-settings-links .list-group-item {
+    padding: 0.85rem 1.5rem;
+    border-color: rgba(255, 255, 255, 0.03) !important;
+}
+
+.dark-style .account-settings-links .list-group-item.active {
+    color: #fff !important;
+}
+
+.light-style .account-settings-links .list-group-item.active {
+    color: #4e5155 !important;
+}
+
+.light-style .account-settings-links .list-group-item {
+    padding: 0.85rem 1.5rem;
+    border-color: rgba(24, 28, 33, 0.03) !important;
+}
+
+.allowfile {
+    color: grey !important;
+}
+
+.formTambahTravel {
+    background-color: rgb(255, 255, 255) !important;
+}
+
+.formTambahTravel input {
+    border: 2px solid #D1D3E2 !important;
+}
+
+.preview {
+    width: 100% !important;
+    max-height: 500px;
+}
+
+#account-general .card-header h3,
+#account-change-password .card-header h3 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    margin-top: 2%;
+}
+
+#account-general .card-header p,
+#account-change-password .card-header p {
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: -1%;
+    margin-bottom: 2%;
+}
